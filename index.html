@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- https://id.pinterest.com/pin/173670129374155834/ -->
+    <!-- https://id.pinterest.com/pin/787004103648304426/ -->
+  </head>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Custom CSS -->
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .fade_in-nav {
+      animation: fadeIn 5s;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  </style>
+  <body class="font-[Poppins]">
+    <section
+      class="container-full lg:py-4 h-[570px] bg-bottom bg-cover"
+      style="background-image: url('/assets/images/company_dark.jpg')"
+      id="home"
+    >
+      <div class="container-full lg:container lg:w-2/3 lg:m-auto h-full">
+        <nav
+          class="flex justify-between items-center bg-slate-200 z-10 mx-auto p-5 lg:rounded-full top-0 lg:top-3"
+          id="nav_fixed"
+        >
+          <div>
+            <h1 class="text-3xl font-bold">Badak</h1>
+          </div>
+          <div
+            class="absolute bg-slate-200 lg:bg-[transparent] lg:static lg:min-h-fit min-h-[40vh] md:min-h-[60vh] left-0 top-0 lg:w-auto w-full flex items-center px-5 translate-y-[-120%] lg:translate-y-[0]"
+            id="navbar"
+          >
+            <ul class="flex lg:flex-row flex-col lg:items-center gap-10">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#vm">V&M</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <button
+              class="hidden lg:inline rounded-full bg-gradient-to-r from-blue-700 to-red-700 text-white px-5 py-2"
+            >
+              Start Now!
+            </button>
+            <div class="space-y-2 lg:hidden cursor-pointer" id="menu">
+              <div class="w-8 h-0.5 bg-gray-600"></div>
+              <div class="w-8 h-0.5 bg-gray-600"></div>
+              <div class="w-8 h-0.5 bg-gray-600"></div>
+            </div>
+            <div
+              class="hidden lg:hidden cursor-pointer text-6xl font-thin"
+              id="close"
+            >
+              <span>&times;</span>
+            </div>
+          </div>
+        </nav>
+        <div class="container md:w-1/2 text-white ml-5 lg:ml-0 my-20">
+          <h1 class="text-3xl md:text-5xl">
+            Company <span class="text-red-600">Profile</span>
+          </h1>
+          <p class="w-[90%] md:w-full my-8 text-sm md:text-base">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur
+            dignissimos labore dolorem sit non est tenetur ab, quasi eaque
+            quibusdam autem, eligendi facilis iusto minima tempore, nisi maiores
+            eos doloremque!
+          </p>
+          <button
+            class="rounded-full bg-gradient-to-r from-blue-700 to-red-700 text-white px-5 py-2"
+          >
+            Start Now!
+          </button>
+        </div>
+        <div class="container gap-2 flex lg:w-1/3 ml-5 lg:ml-0 text-white">
+          <div class="icon cursor-pointer">♥ Facebook</div>
+          <div class="icon cursor-pointer">♥ Twitter</div>
+          <div class="icon cursor-pointer">♥ Instagram</div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="container-full lg:px-12 grid md:grid-cols-2 lg:h-[570px] sm:h-screen"
+      id="about"
+    >
+      <div class="flex gap-8 lg:justify-end items-center p-5">
+        <img
+          class="w-48 h-48 md:h-64 lg:h-80 rounded-full bg-cover lg:w-64"
+          src="assets/images/office_1.jpg"
+          alt="company_1.jpg"
+        />
+        <img
+          class="w-48 h-64 md:h-80 lg:h-96 rounded-full bg-cover lg:w-64"
+          src="assets/images/office_2.jpg"
+          alt="company_2.jpg"
+        />
+      </div>
+      <div class="grid m-auto p-5">
+        <h4 class="mb-2 tracking-[.5rem] uppercase font-bold text-xs md:text-base">About Us</h4>
+        <h1 class="text-2xl md:text-4xl">
+          Let's Talk about <span class="text-red-600">Company</span>
+        </h1>
+        <p class="my-3 text-sm md:text-base">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam, beatae
+          vitae! Nostrum voluptate vero iusto quam temporibus omnis impedit
+          deleniti unde a voluptatibus repellendus libero, repellat illum minus.
+          Facere, natus?
+        </p>
+        <div class="grid gap-3">
+          <div class="flex items-center">
+            <h3
+              class="p-2 w-[2.5rem] bg-blue_navy text-white rounded-full font-bold"
+            >
+              A+
+            </h3>
+            <span class="ml-5 text-sm md:text-base">4.8 / 4.8 ⭐⭐⭐⭐⭐</span>
+          </div>
+          <div class="flex items-center">
+            <i
+              class="fa-solid fa-chart-simple p-3 w-[2.5rem] bg-blue_navy text-white rounded-full"
+            ></i>
+            <p class="ml-5 text-sm md:text-base">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+          </div>
+          <button
+            class="rounded-full bg-gradient-to-r from-blue-700 to-red-700 text-white px-5 py-2 w-[40%] md:w-[30%] lg:w-[20%] mt-2"
+          >
+            See More
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="container-full bg-[#05204A] grid md:grid-cols-2 p-4 lg:p-10 h-[570px] text-white"
+      id="vm"
+    >
+      <div class="my-auto">
+        <div class="lg:w-[80%] ml-auto mr-5">
+          <h4 class="mb-2 tracking-[.5rem] uppercase text-xs md:text-base">
+            V&M Statement
+          </h4>
+          <h1 class="text-2xl md:text-4xl">
+            Create Effective Vision & Mission
+            <span class="text-red-600">Statement</span>
+          </h1>
+          <p class="text-sm md:text-base my-3">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam,
+            beatae vitae! Nostrum voluptate vero iusto quam temporibus omnis
+            impedit deleniti unde a voluptatibus repellendus libero, repellat
+            illum minus. Facere, natus?
+          </p>
+          <button
+            class="rounded-full bg-gradient-to-r from-blue-700 to-red-700 text-white px-5 py-2 mt-2"
+          >
+            See More
+          </button>
+        </div>
+      </div>
+      <div class="my-auto relative">
+        <img
+          class="lg:ml-8 mr-auto rounded-t-full rounded-l-full w-[45%] bg-cover bg-center"
+          src="assets/images/vm_statement.jpg"
+          alt="working.jpg"
+        />
+        <img
+          class="rounded-t-full rounded-r-full w-[45%] bg-cover bg-center absolute right-0 bottom-0"
+          src="assets/images/vm_statement2.jpg"
+          alt="working.jpg"
+        />
+      </div>
+    </section>
+
+    <section class="container-full md:h-[570px] md:mb-4" id="services">
+      <div class="text-center col-span-3 mt-10 md:mt-14 md:mb-4">
+        <h4 class="mb-2 tracking-[.5rem] uppercase font-bold text-xs md:text-base">Services</h4>
+        <h1 class="text-2xl md:text-4xl">
+          Be Our Exclusive
+          <span class="text-red-600">Customer</span>
+        </h1>
+      </div>
+      <div class="px-5 w-full lg:w-[75%] grid md:grid-cols-3 m-auto h-[80%] gap-5">
+        <div
+          class="content bg-slate-200 rounded-lg h-[90%] border my-auto flex flex-col justify-around py-16 px-5 md:p-5"
+        >
+          <div class="text-center">
+            <h1 class="font-medium text-2xl">Basic Plan</h1>
+            <p class="text-sm my-3">
+              Lorem ipsum dolor sit amet, consectetur adipisicing.
+            </p>
+            <h1 class="font-bold text-2xl">$49</h1>
+            <span class="uppercase text-blue_navy text-sm font-semibold"
+              >Billed monthly</span
+            >
+          </div>
+          <div class="benefits text-sm underline my-5">
+            <h5>✓ Lorem ipsum dolor sit amet</h5>
+            <h5>✓ Lorem ipsum dolor sit amet</h5>
+            <h5>✓ Lorem ipsum dolor sit amet</h5>
+            <h5>✓ Lorem ipsum dolor sit amet</h5>
+          </div>
+          <button
+            class="rounded-full bg-gradient-to-r from-blue-700 to-red-700 text-white mx-auto py-2 w-[70%]"
+          >
+            Subscribe
+          </button>
+          <p class="text-xs text-center font-light mt-3">
+            *Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          </p>
+        </div>
+        <div
+          class="content bg-blue_navy rounded-lg h-[100%] border my-auto flex flex-col justify-around p-5 text-white"
+        >
+          <div class="text-center">
+            <h1 class="font-medium text-2xl">Business Plan</h1>
+            <p class="text-sm my-3">
+              Lorem ipsum dolor sit amet, consectetur adipisicing.
+            </p>
+            <h1 class="font-bold text-2xl">$109</h1>
+            <span class="uppercase text-red-600 text-sm font-semibold"
+              >Billed monthly</span
+            >
+          </div>
+          <div class="benefits text-sm underline my-5">
+            <h5>✓ Lorem ipsum dolor sit amet</h5>
+            <h5>✓ Lorem ipsum dolor sit amet</h5>
+            <h5>✓ Lorem ipsum dolor sit amet</h5>
+            <h5>✓ Lorem ipsum dolor sit amet</h5>
+            <h5>✓ Lorem ipsum dolor sit amet</h5>
+            <h5>✓ Lorem ipsum dolor sit amet</h5>
+            <h5>✓ Lorem ipsum dolor sit amet</h5>
+          </div>
+          <button
+            class="rounded-full bg-gradient-to-r from-blue-700 to-red-700 text-white mx-auto py-2 w-[70%]"
+          >
+            Subscribe
+          </button>
+          <p class="text-xs text-center font-light mt-3">
+            *Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          </p>
+        </div>
+        <div
+          class="content bg-slate-200 rounded-lg h-[90%] border my-auto flex flex-col justify-around py-16 px-5 md:p-5"
+        >
+          <div class="text-center">
+            <h1 class="font-medium text-2xl">Premium Plan</h1>
+            <p class="text-sm my-3">
+              Lorem ipsum dolor sit amet, consectetur adipisicing.
+            </p>
+            <h1 class="font-bold text-2xl">$69</h1>
+            <span class="uppercase text-blue_navy text-sm font-semibold"
+              >Billed monthly</span
+            >
+          </div>
+          <div class="benefits text-sm underline my-5">
+            <h5>✓ Lorem ipsum dolor sit amet</h5>
+            <h5>✓ Lorem ipsum dolor sit amet</h5>
+            <h5>✓ Lorem ipsum dolor sit amet</h5>
+            <h5>✓ Lorem ipsum dolor sit amet</h5>
+            <h5>✓ Lorem ipsum dolor sit amet</h5>
+          </div>
+          <button
+            class="rounded-full bg-gradient-to-r from-blue-700 to-red-700 text-white mx-auto py-2 w-[70%]"
+          >
+            Subscribe
+          </button>
+          <p class="text-xs text-center font-light mt-3">
+            *Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="container-full grid lg:grid-cols-2 p-10 bg-blue_navy gap-10 h-[570px]"
+      id="contact"
+    >
+      <div class="my-auto lg:w-[70%] text-white ml-auto mr-0">
+        <h4 class="mb-2 tracking-[.5rem] uppercase text-xs md:text-base">Contact</h4>
+        <h1 class="text-2xl md:text-4xl">Get In <span class="text-red-600">Touch</span></h1>
+        <p class="text-sm md:text-base mt-2">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum
+          tempore ab aspernatur accusantium laudantium modi voluptates alias
+          corporis. Accusantium veritatis debitis ipsam possimus, sint nulla
+          quisquam minima quos quis quidem.
+        </p>
+      </div>
+      <div class="my-auto w-full lg:w-[80%] ml-0 mr-auto">
+        <div class="bg-slate-100 rounded-lg py-6 lg:py-10">
+          <form class="grid gap-5 w-[80%] h-[250px] m-auto">
+            <input
+              class="bg-slate-200 p-2 rounded-md"
+              type="text"
+              placeholder="Name"
+              required
+            />
+            <input
+              class="bg-slate-200 p-2 rounded-md"
+              type="text"
+              placeholder="Email"
+              required
+            />
+            <textarea
+              class="bg-slate-200 p-2 rounded-md"
+              name=""
+              id=""
+              placeholder="Messages"
+              required
+            ></textarea>
+            <button
+              type="submit"
+              class="w-[40%] md:w-[30%] rounded-full bg-gradient-to-r from-blue-700 to-red-700 text-white py-2 px-5 ml-auto mr-0"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-full text-center h-[70px] grid grid-cols-2">
+      <h1 class="m-auto uppercase font-bold text-lg">Badak Company</h1>
+      <p class="m-auto text-lg"><small>Copyright © 2023 Badak</small></p>
+    </section>
+
+    <script
+      src="https://kit.fontawesome.com/bf772f2dd1.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="assets/tailwind.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
