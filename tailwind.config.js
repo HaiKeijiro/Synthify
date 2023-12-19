@@ -4,8 +4,11 @@ module.exports = {
   theme: {
     extend: {
       minHeight: {
-        "section-height": "500px",
+        "section-height": "570px",
       },
+      colors: {
+        "navy_blue": "#05204A"
+      }
     },
   },
   plugins: [],

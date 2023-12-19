@@ -4,12 +4,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Synthify</title>
+
+  <!-- Reference -->
   <!-- https://id.pinterest.com/pin/173670129374155834/ -->
   <!-- https://id.pinterest.com/pin/787004103648304426/ -->
+
 </head>
 
 <!-- Tailwind CSS -->
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="css/style.css">
 
 <!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,18 +24,78 @@
 
   <!-- Home Section -->
   <section id="home">
-    <div class="min-h-section-height bg-cover bg-center"
-      style="background-image: url('/assets/images/company_dark.jpg');">
-      <nav class="container bg-slate-200 m-auto md:rounded-full md:p-7">holla</nav>
+    <div class="min-h-section-height bg-cover bg-bottom flex items-center justify-center"
+      style="background-image: url('images/company_dark.jpg');">
+
+      <!-- Navbar -->
+      <nav class="bg-slate-200 p-6 lg:rounded-full lg:container fixed w-full top-0 lg:top-5 z-10">
+        <div class="container mx-auto flex justify-between items-center relative">
+          <!-- Logo or brand -->
+          <a href="#" class="text-lg font-bold">YourLogo</a>
+
+          <!-- Mobile Menu Button (Burger) -->
+          <div class="block lg:hidden">
+            <button id="burger-btn" class="focus:outline-none">
+              <svg class="h-6 w-6" id="openBtn" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+              </svg>
+              <svg class="h-6 w-6" id="closeBtn" style="display: none;" fill="none" stroke="currentColor"
+                viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+            </button>
+          </div>
+
+          <!-- Navbar Links -->
+          <div class="hidden lg:flex space-x-4">
+            <a href="#home" class="">Home</a>
+            <a href="#about" class="">About</a>
+            <a href="#services" class="">Services</a>
+            <a href="#contact" class="">Contact</a>
+          </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-slate-200 p-10 absolute left-0 right-0">
+          <a href="#home" class="block mb-4">Home</a>
+          <a href="#about" class="block mb-4">About</a>
+          <a href="#services" class="block mb-4">Services</a>
+          <a href="#contact" class="block">Contact</a>
+        </div>
+      </nav>
+
+      <!-- Banner Content -->
+      <div class="container border border-red-600">
+        <div class="text-white">
+          <h1 class="text-3xl md:text-5xl">
+            Company <span class="text-red-600">Profile</span>
+          </h1>
+          <p class="w-[90%] md:w-full my-8 text-sm md:text-base">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur
+            dignissimos labore dolorem sit non est tenetur ab, quasi eaque
+            quibusdam autem, eligendi facilis iusto minima tempore, nisi maiores
+            eos doloremque!
+          </p>
+          <button class="rounded-full bg-gradient-to-r from-blue-700 to-red-700 text-white px-5 py-2">
+            Start Now!
+          </button>
+        </div>
+        <div class="gap-2 flex lg:w-1/3 ml-5 lg:ml-0 text-white">
+          <div class="icon cursor-pointer">♥ Facebook</div>
+          <div class="icon cursor-pointer">♥ Twitter</div>
+          <div class="icon cursor-pointer">♥ Instagram</div>
+        </div>
+      </div>
+
     </div>
   </section>
+  <!-- End of Home Section -->
 
-  <script>
-    // Toggle mobile menu visibility
-    document.getElementById('burger-btn').addEventListener('click', function () {
-      document.getElementById('mobile-menu').classList.toggle('hidden');
-    });
-  </script>
+  <!-- About Us Section -->
+  <section id="about"></section>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
