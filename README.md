@@ -15,7 +15,7 @@ The website is responsive, at least it fits mobile, tablet, and desktop view. He
 
 ## How to install this project?
 
-Keep in mind that this is a node app, you have to install node and run in in node server!
+Keep in mind that this is a node app, you have to install Node.js if you wanna develop the project!
 
 1. Download and install [Node.js](https://nodejs.org/en)
 2. Open your terminal and run `npm install`
